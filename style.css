@@ -1,0 +1,48 @@
+html {
+  background-color: #ebe9d7;
+  background-image: url(./images/background.png);
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+
+@font-face {
+  font-family: "alice-regular";
+  src: url("/fonts/alice-regular.ttf");
+}
+
+@font-face {
+  font-family: "able-regular";
+  src: url("/fonts/Abel-Regular.ttf");
+}
+
+p {
+  font-family: "alice-regular";
+  font-size: 14px;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: overline underline;
+  font-family: "alice-regular";
+  font-size: 65px;
+  letter-spacing: 4px;
+  color: green;
+}
+
+h2 {
+  font-family: "able-regular";
+  font-size: 30px;
+  color: #b8bc5c;
+}
+
+.column {
+  float: left;
+  width: 14%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
