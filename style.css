@@ -5,6 +5,46 @@ html {
   background-size: 80%;
 }
 
+/* Navagation bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+/* Display Menu Items In Grid */
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Fonts*/
+
 @font-face {
   font-family: "alice-regular";
   src: url("/fonts/alice-regular.ttf");
@@ -22,11 +62,6 @@ p {
 
 h1 {
   text-align: center;
-  text-decoration: overline underline;
-  font-family: "alice-regular";
-  font-size: 65px;
-  letter-spacing: 4px;
-  color: green;
 }
 
 h2 {
@@ -35,14 +70,46 @@ h2 {
   color: #b8bc5c;
 }
 
-.column {
-  float: left;
-  width: 14%;
+.centertext {
+  text-align: center;
+}
+#breakfast {
+  background-image: url("./images/headingbreakfast.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+#breakfastinfo {
+  background-image: url("./images/infobackground.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: white;
+  font-weight: normal;
+}
+
+#breakfastwraps {
+  background-image: url("./images/doubleheading.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#breakfastheros {
+  background-image: url("./images/doubleheading.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#rcornersyellow {
+  border-radius: 10px;
+  background: #ffc43c;
+  padding: 10px;
+  width: 200px;
+  height: 50px;
+}
+
+#squaregreen {
+  background: #b8ecac;
+  padding: 10px;
+  width: 200px;
+  height: 250px;
 }
