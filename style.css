@@ -26,6 +26,15 @@ li a {
   text-decoration: none;
 }
 
+div.container {
+  text-align: center;
+}
+
+ul.myUL {
+  display: inline-block;
+  text-align: left;
+}
+
 /* Change the link color to #111 (black) on hover */
 li a:hover {
   background-color: #111;
